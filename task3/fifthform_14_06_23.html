@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body{
+        background: linear-gradient(#00ffff,#ff00ff);
+        border: 1px dashed black;
+        width: 500px;
+        height: 760px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .buttons{
+        text-align: center;
+    }   
+
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table>
+        <tr>
+            <td><label for="firstname">First Name : </label></td> 
+            <td><input type="text" id="firstname">(Max 50 Charactors Allowed)</td> 
+        </tr>    
+        
+        <tr>
+            <td><label for="lastname">Last Name : </label></td>
+            <td><input type="text" id="lastname">(Max 50 Characters Allowed)</td>
+        </tr>
+        
+        <tr>
+        <td><label for="email">Email ID :</label></td>
+        <td><input type="email" id="email"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="phone">Mobile Number :</label></td>
+        <td><input type="tel" id="phone">(10 Digits Allowed)</td>
+        </tr>
+        
+        <tr>
+        <td><label for="gender">Gender :</label></td>
+        <td><label for="male">Male</label>
+        <input type="radio" id="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="dob">Date Of Birth :</label></td>
+        <td><select id="dob">
+            <option>Day</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>23</option>
+        </select>
+        <select id="dob">
+            <option>Month</option>
+            <option>jan</option>
+            <option>feb</option>
+            <option>mar</option>
+            <option>apr</option>
+            <option>may</option>
+            <option>june</option>
+            <option>july</option>
+            <option>aug</option>
+            <option>sep</option>
+            <option>oct</option>
+        </select>
+        <select id="dob">
+            <option>Year</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+        </select></td>
+        </tr>
+        
+        <tr>
+        <td><label for="add">Address :</label></td>
+        <td><textarea name="address" id="add" cols="25" rows="7"></textarea></td>
+        </tr>
+        
+        <tr>
+        <td><label for="city">City :</label></td>
+        <td><input type="text" id="city">(Max 50 Characters Allowed)</td>
+        </tr>
+        
+        <tr>
+        <td><label for="pincode">Pincode :</label></td>
+        <td><input type="number" id="pincode">(Max 6 Characters Allowed)</td>
+        </tr>
+         
+        <tr>
+        <td><label for="state">State :</label></td>
+        <td><input type="text" id="state">(Max 50Characters Allowed)</td>
+        </tr>
+         
+        <tr>
+        <td><label for="country">Country :</label></td>
+        <td><input type="text" id="country"></td>
+        </tr>
+         
+        <tr>
+        <td><label for="hobbies">Hobbies :</label></td>
+        <td><label for="drawing">Drawing</label>
+        <input type="checkbox" id="drawing">
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="singing">
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="dancing">
+        <label for="sketching">Sketching</label>
+        <input type="checkbox" id="sketching">
+        <label for="others">Others</label>
+        <input type="checkbox" id="others">
+        <input type="text" id="others">(Max 50 Characters Allowed)</td>
+        </tr>
+         
+        <tr>
+        <td><label for="qualification">Qualification</label></td>
+        <td><input type="checkbox" id="metric">
+        <label for="metric">High School</label>
+        <br>
+        <input type="checkbox" id="intermediate">
+        <label for="intermediate">Higher School</label>
+        <br>
+        <input type="checkbox" id="bechelors">
+        <label for="bechelors">Graduation</label>
+        <br>
+        <input type="checkbox" id="masters">
+        <label for="masters">Post Graduation</label>
+        <br>
+        <input type="checkbox" id="phd">
+        <label for="phd">Phd</label></td>
+        </tr>
+         
+        <tr>
+        <td><label for="course">Courses Applied For</label></td>
+        <td><input type="checkbox" id="bca">
+        <label for="bca">BCA(Bechelor of Computer Application)</label>
+        <br>
+        <input type="checkbox" id="bcom">
+        <label for="bcom">B.Com(Bechelor of Commerce)</label>
+        <br>
+        <input type="checkbox" id="bsc">
+        <label for="bsc">B.Sc(Bechelor of Science)</label>
+        <br>
+        <input type="checkbox" id="ba">
+        <label for="ba">BA(Bechelor of Arts)</label>
+        <br>
+        <input type="checkbox" id="mca">
+        <label for="mca">MCA(Master of Computer Applications)</label>
+        <br>
+        <input type="checkbox" id="mcom">
+        <label for="mcom">M.Com(Master of Commerce)</label>
+        <br>
+        <input type="checkbox" id="msc">
+        <label for="msc">M.Sc(Master of Science)</label>
+        <br>
+        <input type="checkbox" id="ma">
+        <label for="ma">MA(Master of Arts)</label></td>
+        </tr>
+         
+        
+        </table>
+        <br>
+        <section class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </section>
+    </form>
+</body>
+</html>
