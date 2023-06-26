@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms using css</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type='text'] {
+            width: 100%;
+        }
+        input[type='number'] {
+            width: 100%;
+        }
+        input[type='tel'] {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+        input[type='password'] {
+            width: 100%;
+        }
+        input[type='email'] {
+            width: 100%;
+        }
+        input[type='submit'] {
+            width: 95%;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#">
+        <h1>Student Registration Form</h1>
+
+        <label for="firstname">Firstname</label>
+        <br>
+        <input type="text" name="firstName" id="firstname" placeholder="Firstname">
+        <br><br>
+
+        <label for="middlename">Middlename</label>
+        <br>
+        <input type="text" name="midname" id="middlename" placeholder="Middlename">
+        <br><br>
+
+        <label for="lastname">Lastname</label>
+        <br>
+        <input type="text" name="lastName" id="lastname" placeholder="Lastname">
+        <br><br>
+
+        <label for="course">Course : </label>
+        <select name="course">
+            <option>Course</option>
+        </select>
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="phone">Phone : </label>
+        <br>
+        <input type="number" name="countrycode" id="phone" placeholder="type country code with +">
+        <br><br>
+        <input type="tel" name="number" id="phone" placeholder="phone no.">
+        <br><br>
+
+        <label for="address">Current Address : </label>
+        <br>
+        <textarea name="address" id="address" cols="50" rows="3" placeholder="Current Address"></textarea>
+        <br><br>
+
+        <label for="email">Email : </label>
+        <br>
+        <input type="email" name="mail" id="email" placeholder="Enter Email">
+        <br><br>
+
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="passWord" id="password" placeholder="Enter Password">
+        <br><br>
+        <label for="retype">Re-type Password</label>
+        <br>
+        <input type="password" name="passWord" id="retype" placeholder="Re-enter Password">
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- second form done -->
+</body>
+</html>
