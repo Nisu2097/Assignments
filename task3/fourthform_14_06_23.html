@@ -3,84 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user registration</title>
+    <title>self registration</title>
 
     <style>
-        
-        input {
-             background-color: #99ffe6;
+
+        body {
+            width: 60%;
         }
-        .section1,.section2 {
-             border: 3px #99ffe6 dotted;
-             border-radius: 0 0 0 0;
-             width: 540px;
-             height: 160px;
-             padding-top: 20px;
-             margin-top: -30px;
+        form {
+            border: 1px solid black;
+            border-radius: 0 0 0 0;
+            width: 450px;
+            height: 800px;
+            text-align: center;
+            padding-bottom: 6px;
+        }
+        h3 {
+            border: 1px solid black;
+            margin-top: -1px;
         }
         label {
-            width: 250px;
+            width: 100px;
             display: inline-block;
-            margin-left: 10px;            
         }
-        h4 {
-            color: blueviolet;
-            margin-left: 10px;
+        p,label {
+            color: cadetblue;
+        }
+        h3,input[type='submit'],input[type='reset'] {
+            background-color: lightslategray;
         }
 
     </style>
 
 </head>
-
 <body>
     <form action="#">
-    
-        <h1>User Registration Form</h1>
 
-        <h4>Personal Information</h4>
-    
-        <section class="section1">
-            <label for="name">Name :</label>
-            <input type="text" name="fullname" id="name">
-            <br><br>
-    
-            <label for="Email">Email Address :</label>
-            <input type="email" name="mail" id="email">
-            <br><br>
-    
-            <label for="password">Password :</label>
-            <input type="password" name="passWord" id="password">
-            <br><br>
-    
-            <label for="retype">Confirm Password :</label>
-            <input type="password" name="reenter" id="retype">
-            <br>
-        </section>
-    
-        <h4>Address Details</h4>
-    
-        <section class="section2">
-            <label for="add1">Address line one :</label>
-            <input type="text" name="address" id="add1">
-            <br><br>
-    
-            <label for="add2">Address line two :</label>
-            <input type="text" name="address" id="add2">
-            <br><br>
-    
-            <label for="city">Town/City</label>
-            <input type="text" name="town" id="city">
-            <br><br>
-    
-            <label for="pincode">Zip/Post code</label>
-            <input type="number" name="code" id="pincode">
-            <br>
-        </section>
-        <br>
-    
-        <input type="submit" value="Sign Up!">
-    
+    <h3>Self Registration - Enter User Details</h3>
+
+    <p>
+        <b>Note: </b>
+        Enter user details and click Register to access the workgroup.
+        User ID, Password, Last Name or First Name, and Email are required fields.
+    </p>
+
+    <label for="userid">User ID : </label>
+    <input type="text" name="id" id="userid">
+    <br><br>
+
+    <label for="password">Password</label>
+    <input type="password" name="pass" id="password">
+    <br><br>
+
+    <label for="retypepass">Confirm Password</label>
+    <input type="password" name="pass" id="retypepass">
+    <br><br>
+
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lname" id="lastname">
+    <br><br>
+
+    <label for="firstname">First Name</label>
+    <input type="text" name="fname" id="firstname">
+    <br><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="mail" id="email">
+    <br><br>
+    <label for="company">Company</label>
+    <input type="text" name="companyname" id="company">
+    <br><br>
+
+    <label for="phone">Phone</label>
+    <input type="tel" name="number" id="phone">
+    <br><br>
+
+    <label for="fax">Fax</label>
+    <input type="text" name="fax" id="fax">
+    <br><br>
+
+    <label for="add1">Address 1</label>
+    <input type="text" name="address" id="add1">
+    <br><br>
+
+    <label for="add2">Address 2</label>
+    <input type="text" name="address" id="add2">
+    <br><br>
+
+    <label for="city">City</label>
+    <input type="text" name="city" id="city">
+    <br><br>
+
+    <label for="state">State/Province</label>
+    <input type="text" name="state" id="state">
+    <br><br>
+
+    <label for="pincode">Zip/Postal Code</label>
+    <input type="number" name="code" id="pincode">
+    <br><br>
+
+    <label for="country">Country</label>
+    <input type="text" name="country" id="country">
+    <br><br>
+
+    <label for="comment">Comment</label>
+    <input type="text" id="comment">
+    <br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Cancel">
+
     </form>
-    
-    </body>
-    </html>
+</body>
+</html>
