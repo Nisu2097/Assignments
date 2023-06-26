@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration</title>
+
+    <style>
+        
+        input {
+             background-color: #99ffe6;
+        }
+        .section1,.section2 {
+             border: 3px #99ffe6 dotted;
+             border-radius: 0 0 0 0;
+             width: 540px;
+             height: 160px;
+             padding-top: 20px;
+             margin-top: -30px;
+        }
+        label {
+            width: 250px;
+            display: inline-block;
+            margin-left: 10px;            
+        }
+        h4 {
+            color: blueviolet;
+            margin-left: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <form action="#">
+    
+        <h1>User Registration Form</h1>
+
+        <h4>Personal Information</h4>
+    
+        <section class="section1">
+            <label for="name">Name :</label>
+            <input type="text" name="fullname" id="name">
+            <br><br>
+    
+            <label for="Email">Email Address :</label>
+            <input type="email" name="mail" id="email">
+            <br><br>
+    
+            <label for="password">Password :</label>
+            <input type="password" name="passWord" id="password">
+            <br><br>
+    
+            <label for="retype">Confirm Password :</label>
+            <input type="password" name="reenter" id="retype">
+            <br>
+        </section>
+    
+        <h4>Address Details</h4>
+    
+        <section class="section2">
+            <label for="add1">Address line one :</label>
+            <input type="text" name="address" id="add1">
+            <br><br>
+    
+            <label for="add2">Address line two :</label>
+            <input type="text" name="address" id="add2">
+            <br><br>
+    
+            <label for="city">Town/City</label>
+            <input type="text" name="town" id="city">
+            <br><br>
+    
+            <label for="pincode">Zip/Post code</label>
+            <input type="number" name="code" id="pincode">
+            <br>
+        </section>
+        <br>
+    
+        <input type="submit" value="Sign Up!">
+    
+    </form>
+    
+    </body>
+    </html>
