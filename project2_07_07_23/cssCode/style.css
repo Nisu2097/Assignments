@@ -1,0 +1,169 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header section */
+
+
+header{
+    height: 130px;
+    width: 100%;
+}
+.fHeader{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    height: 40px;
+    width: 100%;  
+}
+.fHeader ul{
+    display: flex;
+    width: 600px;
+}
+.list1 li{
+    list-style-type: none;
+    font-size: xx-small;
+    padding-left: 100px;
+}
+.list2{
+    padding-left: 100px;
+}
+.list2 li{
+    list-style-type: none;
+    width: 80px;
+    /* padding-left: 100px; */
+    font-size: xx-small;
+}
+
+.sHeader{
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+}
+.sHeader ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    gap: 20px;
+}
+.fiist li{
+    width: 100%;
+    color: black;
+}
+.setup{
+    padding-top: 15px;
+}
+.sHeader a{
+    color: black;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+
+/* banner 1 section */
+
+
+.banner1{
+    background-image: url(/project_2/images/bg-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position-x: 300px; */
+    background-color: darksalmon;
+    height: 300px;
+    width: 100%;
+}
+.banner1 div{
+    width: 500px;
+    text-align: center;
+    padding-top: 60px;
+}
+.banner p{
+    font-size: x-small;
+}
+.banner1 button{
+    height: 40px;
+    width: 120px;
+    background-color: indianred;
+    border: 1px none indianred;
+}
+
+
+/* featured products */
+
+
+.fProducts{
+    text-align: center;
+}
+div .flexible{
+    display: flex;  
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* banner 2 */
+
+
+.banner2{
+    background-color: lightgray;
+    height: 250px;
+}
+.banner2 div{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* most popular things */
+
+
+.mPopular{
+    text-align: center;
+}
+.mPopular .flexible{
+    display: flex;
+}
+
+
+/* icons */
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+.icons div{
+    border: 1px solid rgb(234, 98, 121);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* follow us */
+
+
+.followUs img{
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+
+.footer{
+    background-color: black;
+    color: aliceblue;
+}
+.footer .list{
+    display: flex;
+    gap: 100px;
+    
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer li{
+    height: 30px;
+}
