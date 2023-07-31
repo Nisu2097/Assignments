@@ -11,13 +11,15 @@
 <body>
 
     <div class="container">
-        <h1>Cubic Calculator</h1>
+        <h1>Bill Splitter</h1>
         <hr>
-        <input type="text" id="amount" placeholder="enter the amount"><br>
-        <input type="text" id="people" placeholder="number of people"><br>
-        <button type="button" onclick="splitter()">SPLIT</button><br>
-        <input type="text" id="ressult" placeholder="splitted amount">
-    </div>
+        <input type="text" id="amount" placeholder="Enter Amount"><br>
+        <span id="warning1" style="color: red;"></span>
+        <input type="text" id="people" placeholder="Number of People"><br>
+        <span id="warning2" style="color: red;"></span>
+        <button type="button" onclick="splitBill()">Split Bill</button><br>
+        <input type="text" id="result" placeholder="Result"><br>
+    </div>
 
     <script src="./app.js"></script>
     
