@@ -33,6 +33,7 @@ button{
 }
 
 textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 15px;
     /* padding: 10px; */
     border: 1px solid black;
