@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        /* header part css */
+
+       .header{
+        display: flex;
+        position: fixed;
+        top: 0;
+        background-color: #e6e6e6;
+        line-height: 65px;
+        width: 100%;
+        margin: -8px;
+       }
+       .logo{
+        width: 60%;
+        padding-top: 20px;
+        padding-left: 60px;
+       }
+       .navigation{
+        width: 40%;
+        display: flex;
+       }
+       .navigation div{
+        width: 17%;
+        padding-top: 10px; 
+       }
+       .navigation a{
+        color: black;
+        text-decoration: none;
+       }
+       .home a{
+        color: #009999;
+       }
+       .navigation a:hover{
+        color: #009999;
+        text-decoration: underline; 
+       }
+       
+       /* firstBanner css */
+
+       .firstBanner{        
+        background-image: url(../project_1_images/required/firstBanner.png);
+        height: 570px;
+        width: 100%;
+        background-size: cover;
+        background-position-y: 75px;
+       }
+       .firstBanner h3{
+        padding-left: 65px;
+        color: white;
+        font-size: xx-large;
+        padding-top: 170px;
+       }
+       .firstBanner h1{
+        padding-left: 65px;
+        font-size: 50px;
+        margin-top: -25px;
+       }
+       .firstBanner h2{
+        padding-left: 65px;
+        font-size: 50px;
+        color: #009999;
+        margin-top: -25px;
+       }
+       .firstBanner p{
+        padding-left: 62px;
+        margin-top: -25px;
+        font-size: smaller;
+       }
+       .firstBanner h4{
+        padding-left: 130px;
+        font-size: 15px;
+        color: #009999;
+        background-image: url(../project_1_images/required/shopnowFirstBanner.png);
+        background-position: 50px;
+        background-repeat: no-repeat;
+        line-height: 40px;
+        width: 130px;
+       }
+       .features{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 30px;
+       }
+       .features div{
+        border: 1px solid grey;
+        border-radius: 5px;
+        height: 170px;
+        width: 160px;
+       }
+       div img{
+        padding: 10px;
+       }
+       .features h4{
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 140px;
+       }
+       .pinkCol{
+        background-color: lightcoral;
+       }
+       .lightgreenCol{
+        background-color: darkolivegreen;
+       }
+       .lblueCol{
+        background-color: cadetblue;
+       }
+       .grey{
+        background-color: dimgray;
+       }
+       .antiquewhiteCol{
+        background-color: antiquewhite;
+       }
+
+       /* featured products */
+
+
+       .heading1{
+        text-align: center;
+       }
+
+       .featured1{
+        display: flex;
+        justify-content: space-around;
+       }
+       .clothes1{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 320px;
+        width: 240px;
+        background-color: white;
+       }
+       .featured1 img{
+        padding-left: 25px;
+        padding-top: 15px;
+       }
+       .featured1 p{
+        color: grey;
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .pname1{
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .featured1 h3{
+        color: goldenrod;
+        padding-left: 20px;
+        margin-top: -20px;
+       }
+       .clothes1 div{
+        display: flex;
+        justify-content: space-between;
+       }
+      .price1{
+        color: #009999;
+        margin-top: -15px;
+        margin-left: 15px;
+      }
+      .clothes1 i{
+        margin-top: -17px;
+        margin-right: 15px;
+        color: #009999;
+      }
+      
+      .featured2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+       }
+       .clothes2{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 320px;
+        width: 240px;
+        background-color: white;
+       }
+       .featured2 img{
+        padding-left: 25px;
+        padding-top: 15px;
+       }
+       .featured2 p{
+        color: grey;
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .pname2{
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .featured2 h3{
+        color: goldenrod;
+        padding-left: 20px;
+        margin-top: -20px;
+       }
+       .clothes2 div{
+        display: flex;
+        justify-content: space-between;
+       }
+      .price2{
+        color: #009999;
+        margin-top: -15px;
+        margin-left: 15px;
+      }
+      .clothes2 i{
+        margin-top: -17px;
+        margin-right: 15px;
+        color: #009999;
+      }
+      .repair{
+        background-image: url(../project_1_images/required/sunglass.jpg);
+        height: 220px;
+        background-size: cover;
+        text-align: center;
+        color: lightgrey;
+      }
+      .repair h1, .repair p{
+        padding-top: 20px;
+      }
+      .repair h3{
+        padding-top: 30px;
+      }
+
+      /* new arrivals collection */
+
+
+
+      .heading2{
+        text-align: center;
+       }
+
+       .featured3{
+        display: flex;
+        justify-content: space-around;
+       }
+       .clothes3{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 320px;
+        width: 240px;
+        background-color: white;
+       }
+       .featured3 img{
+        padding-left: 25px;
+        padding-top: 15px;
+       }
+       .featured3 p{
+        color: grey;
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .pname3{
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .featured3 h3{
+        color: goldenrod;
+        padding-left: 20px;
+        margin-top: -20px;
+       }
+       .clothes3 div{
+        display: flex;
+        justify-content: space-between;
+       }
+      .price3{
+        color: #009999;
+        margin-top: -15px;
+        margin-left: 15px;
+      }
+      .clothes3 i{
+        margin-top: -17px;
+        margin-right: 15px;
+        color: #009999;
+      }
+      
+      .featured4{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+       }
+       .clothes4{
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        height: 320px;
+        width: 240px;
+        background-color: white;
+       }
+       .featured4 img{
+        padding-left: 25px;
+        padding-top: 15px;
+       }
+       .featured4 p{
+        color: grey;
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .pname4{
+        padding-left: 20px;
+        margin-top: -10px;
+       }
+       .featured4 h3{
+        color: goldenrod;
+        padding-left: 20px;
+        margin-top: -20px;
+       }
+       .clothes4 div{
+        display: flex;
+        justify-content: space-between;
+       }
+      .price4{
+        color: #009999;
+        margin-top: -15px;
+        margin-left: 15px;
+      }
+      .clothes4 i{
+        margin-top: -17px;
+        margin-right: 15px;
+        color: #009999;
+      }
+
+      /* two banners */
+
+
+
+      .twoBanners{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+      }
+      .crazyDeals{
+        background-image: url(../project_1_images/required/crazyDeals.jpg);
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 550px;
+        color: white;
+        list-style-type: none;
+        margin: 10px;
+      }
+      .upcomingSeason{
+        background-image: url(../project_1_images/required/upcomingSeason.jpg);
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 550px;
+        color: white;
+        list-style-type: none;
+        margin: 10px;
+      }
+      .button{
+        border: 1px solid lightgray;
+        text-align: center;
+        box-sizing: border-box;
+        width: 85px;
+        height: 40px;
+        padding-top: 10px;
+      }
+
+      /* three banners */
+
+      .threeBanners{
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .banner1{
+        background-image: url(../project_1_images/required/seasonalSale.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+        margin-right: 10px;
+        list-style-type: none;
+      }
+      .banner2{
+        background-image: url(../project_1_images/required/newFootwear.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+        margin-left: 10px;
+        margin-right: 10px;
+        list-style-type: none;
+      }
+      .banner3{
+        background-image: url(../project_1_images/required/t-shirts.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+        margin-left: 10px;
+        list-style-type: none;
+      }
+
+
+      /* sign up for newsletters */
+
+      .fourthBanner{
+        background-image: url(../project_1_images/required/signup.png);
+        background-size: cover;
+        background-color: rgb(14, 5, 69);
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .signup{
+        list-style-type: none;
+        color: white;
+      }
+      .enterEmail{
+        list-style-type: none;
+        display: flex;
+      }
+      .email input{
+        background-color: lightgrey;
+        border-radius: 5px;
+        height: 40px;
+        width: 280px;
+        margin-right: -1px;
+        margin-top: 25px;
+      }
+      .submit input{
+        background-color: #009999;
+        height: 45px;
+        width: 100px;
+        border-radius: 5px;
+        border-color: #009999;
+        margin-left: -1px;
+        margin-top: 25px;
+        color: lightgrey;
+      }
+
+
+      /* footer of the website */
+
+
+
+      .footer{
+        background-color: lightgrey;
+        width: 100%;
+        height: 350px;
+        display: flex;
+      }
+      .flist1{
+        list-style-type: none;
+        margin-top: 40px;
+      }
+      .flist2{
+        list-style-type: none;
+        margin-top: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+      }
+      .flist3{
+        list-style-type: none;
+        margin-top: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+      }
+      .flist4{
+        list-style-type: none;
+        margin-top: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: smaller;
+      }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- header part -->
+
+    <div class="header">
+
+    <div class="logo">
+        <img src="../project_1_images/required/logo.png" alt="brandLogo">
+    </div>
+
+    <div class="navigation">
+        <div class="home"><a href="#">Home</a></div>
+        <div><a href="#">Shop</a></div>
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">About</a></div>
+        <div><a href="#">Contact</a></div>
+        <div>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+    
+    </div>
+
+    <!-- first banner -->
+
+    <div class="firstBanner">
+        <h3>Trade-in-offer</h3>
+        <h1>Super value deals</h1>
+        <h2>On all products</h2>
+        <p>save more coupons & up to 70% off!</p>
+        <h4>Shop now</h4>
+    </div>
+
+    <!-- features of website -->
+
+    <div class="features">
+        <div><img src="./../../project_1_images/required/freeShipping.png" alt="freeShipping"
+             width="120px" height="100px"><h4 class="pinkCol">Free shipping</h4></div>
+        <div><img src="./../../project_1_images/required/onlineOrder.png" alt="onlineOrder"
+             width="120px" height="100px"><h4 class="lightgreenCol">Online order</h4></div>
+        <div><img src="./../../project_1_images/required/saveMoney.png" alt="saveMoney"
+             width="120px" height="100px"><h4 class="lblueCol">Save money</h4></div>
+        <div><img src="./../../project_1_images/required/promotions.png" alt="promotions"
+             width="120px" height="100px"><h4 class="grey">Promotions</h4></div>
+        <div><img src="./../../project_1_images/required/happySell.png" alt="happySell"
+             width="120px" height="100px"><h4 class="pinkCol">Happy sell</h4></div>
+        <div><img src="./../../project_1_images/required/247Support.png" alt="247Support"
+             width="120px" height="100px"><h4 class="antiquewhiteCol">24/7 support</h4></div>
+    </div>
+
+
+    <!-- featured products -->
+
+    <div class="heading1">
+        <h1 style="font-size: xx-large;">Featured Products</h1>
+        <p style="font-size: smaller;">Summer Collection New Modern Design</p>
+    </div>
+    <div class="featured1 products">
+        <div class="clothes1">
+            <img src="../project_1_images/products/product1.jpg" alt="product1"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname1">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price1">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes1">
+            <img src="../project_1_images/products/product2.jpg" alt="product2"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname1">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price1">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes1">
+            <img src="../project_1_images/products/product3.jpg" alt="product3"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname1">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price1">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes1">
+            <img src="../project_1_images/products/product4.jpg" alt="product4"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname1">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price1">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured2 products">
+        <div class="clothes2">
+            <img src="../project_1_images/products/product5.jpg" alt="product1"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname2">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price2">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes2">
+            <img src="../project_1_images/products/product6.jpg" alt="product2"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname2">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price2">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes2">
+            <img src="../project_1_images/products/product7.jpg" alt="product3"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname2">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price2">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes2">
+            <img src="../project_1_images/products/product8.jpg" alt="product4"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname2">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price2">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="repair services">
+        <h3>Repair Services</h3>
+        <h1>Up to 70% Off - All t-shirts & Accessories</h1>
+        <p><button>Explore More</button></p>
+    </div>
+
+    <!-- new arrivals collection -->
+
+
+    <div class="heading2">
+        <h1 style="font-size: xx-large;">New Arrivals</h1>
+        <p style="font-size: smaller;">Summer Collection New Modern Design</p>
+    </div>
+
+    <div class="featured3 products">
+        <div class="clothes3">
+            <img src="../project_1_images/products/arrival1.jpg" alt="arrival1"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname3">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price3">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes3">
+            <img src="../project_1_images/products/arrival2.jpg" alt="arrival2"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname3">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price3">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes3">
+            <img src="../project_1_images/products/arrival3.jpg" alt="arrival3"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname3">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price3">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes3">
+            <img src="../project_1_images/products/arrival4.jpg" alt="arrival4"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname3">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price3">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured4 products">
+        <div class="clothes4">
+            <img src="../project_1_images/products/arrival5.jpg" alt="arrival5"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname4">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price4">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes4">
+            <img src="../project_1_images/products/arrival6.jpg" alt="arrival6"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname4">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price4">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes4">
+            <img src="../project_1_images/products/arrival7.jpg" alt="arrival7"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname4">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price4">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="clothes4">
+            <img src="../project_1_images/products/arrival8.jpg" alt="arrival8"
+             height="200px" width="180px">
+            <p>adidas</p>
+            <h4 class="pname4">Cartoon Astraunut T-shirts</h4>
+            <h3>★★★★★</h3>
+            <div>
+            <h4 class="price4">$78</h4>
+            <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- two banners -->
+
+    <div class="twoBanners">
+        <ul class="crazyDeals"><br><br>
+           <li><h4>crazy deals</h4></li>
+           <li><h1>buy 1 get 1 free</h1></li>
+           <li><p>the best classic dress is on sale at cara</p></li>
+           
+           <li class="button">Learn More</li>
+        </ul>
+        <ul class="upcomingSeason"><br><br>
+           <li><h4>spring/summer</h4></li>
+           <li><h1>upcoming season</h1></li>
+           <li><p>the best classic dress is on sale at cara</p></li>
+           
+           <li class="button">Collection</li>
+        </ul>
+    </div>
+
+<!-- three banners -->
+
+
+<div class="threeBanners">
+    <ul class="banner1"><br><br>
+        <li><h3 style="color: white;">SEASONAL SALE</h3></li>
+        <li><h6 style="color: brown;">Winter Collection 50% Off</h6></li>
+    </ul>
+    <ul class="banner2"><br><br>
+        <li><h3 style="color: white;">NEW FOOTWEAR</h3></li>
+        <li><h3 style="color: white;">COLLECTIONE</h3></li>
+        <li><h6 style="color: brown;">Spring/Summer 2022</h6></li>
+    </ul>
+    <ul class="banner3"><br><br>
+        <li><h3 style="color: white;">T-SHIRTS</h3></li>
+        <li><h6 style="color: brown;">New Trendy Prints</h6></li>
+    </ul>
+</div>
+
+<!-- sign up for newsletters -->
+
+
+<div class="fourthBanner">
+  <ul class="signup newsletter">
+    <li><h2>Sign Up For Newsletters</h2></li>
+    <li><span style="color: darkgray;">get e-mail updates about shop & </span><span style="color: goldenrod;">special offers</span></li>
+  </ul>
+  <ul class="enterEmail">
+    <li class="email"><input type="email" placeholder="Your email address"></li>
+    <li class="submit"><input type="submit" value="Sign Up"></li>
+  </ul>
+</div>
+
+<!-- footer of the website -->
+
+
+<div class="footer">
+  <ul class="flist1">
+    <li><img src="../project_1_images/required/logo.png" alt="logo"></li>
+    <li><h4>contact</h4></li>
+    <li style="color: grey;font-style: italic;"><p><b>Address:</b> Wellington Road, Street 32, San Francisco</p></li>
+    <li style="color: grey;font-style: italic;"><p><b>Phone:</b> Wellington Road, Street 32, San Francisco</p></li>
+    <li style="color: grey;font-style: italic;"><p><b>Hours</b> 10.00 - 18.00. Mon - Sat</p></li>
+    <li><h4>Follow Us</h4></li>
+    <li style="color: grey;">
+      <i class="fa-brands fa-square-facebook fa-2xs"></i>
+      <i class="fa-brands fa-youtube fa-2xs"></i>
+      <i class="fa-brands fa-telegram fa-2xs"></i>
+      <i class="fa-brands fa-instagram fa-2xs"></i>
+      <i class="fa-brands fa-twitter fa-2xs"></i>
+    </li>
+  </ul>
+
+  <ul class="flist2">
+    <li><h4>About</h4></li>
+    <li style="color: grey;"><p>About Us</p></li>
+    <li style="color: grey;"><p>Delivery Information</p></li>
+    <li style="color: grey;"><p>Privacy policy</p></li>
+    <li style="color: grey;"><p>Terms&Conditions</p></li>
+    <li style="color: grey;"><p>Contact Us</p></li>
+  </ul>
+
+  <ul class="flist3">
+    <li><h4>My Account</h4></li>
+    <li style="color: grey;"><p>Sign In</p></li>
+    <li style="color: grey;"><p>View Cart</p></li>
+    <li style="color: grey;"><p>My Watchlist</p></li>
+    <li style="color: grey;"><p>Track My Order</p></li>
+    <li style="color: grey;"><p>Help</p></li>
+  </ul>
+  <ul class="flist4">
+    <li><h4>Install App</h4></li>
+    <li style="color: grey;"><p>From App Store Or Google Play</p></li>
+    <li>
+      <img src="../project_1_images/required/apple.jpg" alt="apple" height="35px" width="140px">
+      <img src="../project_1_images/required/gPlay.jpg" alt="gplay" height="35px" width="140px">
+    </li>
+    <li style="color: grey;"><p>Secured Payment Gateways</p></li>
+    <li><img src="../project_1_images/required/payGateway.png" alt="payGateway" height="30px" width="220px"></li>
+  </ul>
+</div>
+
+</body>
+</html>
